@@ -1,0 +1,17 @@
+api:
+  platform: "deepseek"  # 可以是 "deepseek", "openai", "huggingface" 等
+  deepseek:
+    base_url: "https://api.deepseek.com/v1"
+    api_key: "your_deepseek_api_key_here"
+  openai:
+    api_key: "your_openai_api_key_here"
+    model: "gpt-3.5-turbo"
+  huggingface:
+    api_key: "your_huggingface_api_key_here"
+    model: "gpt2"  # 或其他模型名称
+  timeout: 30
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "app.log"
